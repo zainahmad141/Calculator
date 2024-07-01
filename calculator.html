@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+
+<body style="background-image: url(1127205.png);">
+
+
+
+    <link rel="stylesheet" href="calculator.css">
+    <div class="outputcontainer">
+        <input class="output" id="output" type="text" readonly>
+    </div>
+
+
+    <table class="Calculator">
+
+        <br>
+        <tr>
+            <td> <a> <input class="button" type="button" value="1" onclick="getValue('1')" /></a> </td>
+            <td> <input class="button" type="button" value="2" onclick="getValue('2')" /> </td>
+            <td> <input class="button" type="button" value="3" onclick="getValue('3')" /> </td>
+            <td> <input class="button" type="button" value="/" onclick="getOperator('/')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="4" onclick="getValue('4')" /> </td>
+            <td> <a> <input class="button" type="button" value="5" onclick="getValue('5')" /></a> </td>
+            <td> <input class="button" type="button" value="6" onclick="getValue('6')" /> </td>
+            <td> <input class="button" type="button" value="-" onclick="getOperator('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="7" onclick="getValue('7')" /> </td>
+            <td> <input class="button" type="button" value="8" onclick="getValue('8')" /> </td>
+            <td> <input class="button" type="button" value="9" onclick="getValue('9')" /> </td>
+            <td> <a><input class="button" type="button" value="+" onclick="getOperator( '+' )" /></a> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="." onclick="getValue('.')" /> </td>
+            <td> <input class="button" type="button" value="0" onclick="getValue('0')" /> </td>
+            <td> <input class="button" type="button" value="=" onclick="calculate()" /> </td>
+            <td> <input class="button" type="button" value="*" onclick="getOperator('*')" /> </td>
+        </tr>
+
+        <tr>
+
+            <td> <input class="button clear" type="button" value="AC" onclick="clearScreen()" /> </td>
+            <td> <input id="toggle" class="button" type="button" value="ON" onclick="toggleCalculator()" />
+            </td>
+
+        </tr>
+
+
+
+
+    </table>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>

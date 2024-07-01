@@ -1,0 +1,49 @@
+.Calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+}
+
+.button {
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    font-size: 30px;
+}
+
+.clear {
+    background-color: blue;
+    color: white;
+}
+
+.button:active {
+    background-color: aquamarine;
+}
+
+.output {
+    border: solid black 1px;
+    color: black;
+    border-radius: 2px;
+    width: 400px;
+    height: 50px;
+    text-align: right;
+    font-size: 30px;
+}
+
+.outputcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    width: 100px;
+}
+
+#toggle {
+    background-color: green;
+    color: black;
+
+}
